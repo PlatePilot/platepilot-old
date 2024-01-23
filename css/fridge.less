@@ -1,0 +1,114 @@
+.menu {
+    .menu-item {
+        color: var(--no-select);
+    }
+
+    .item-4 {
+        color: var(--on-background);
+        background-color: var(--secondary);
+    }
+}
+
+
+.header {
+    color: var(--on-surface);
+
+    padding: 8px;
+    margin: 0 5px;
+}
+
+.fridge {
+    display: flex;
+
+    .navcolumn {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--surface);
+
+        margin: 10px;
+
+        width: 170px;
+        height: fit-content;
+
+        border-radius: 10px;
+
+        .category {
+            padding: 8px;
+            margin: 0 5px;
+
+            width: fit-content;
+
+            color: var(--on-surface);
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .all-items {
+            margin: 8px 5px;
+        }
+    }
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 10px;
+
+        background-color: var(--surface);
+
+        margin: 10px;
+
+        border-radius: 10px;
+
+        .content {
+
+            .head {
+                display: flex;
+                justify-content: space-between;
+
+                .add-item-button {
+                    background-color: var(--secondary);
+                    color: var(--accent);
+                    margin: 7px;
+                    padding: 6px;
+
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    cursor: pointer;
+
+                    border-radius: 10px;
+
+                }
+            }
+
+            .items-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+
+                gap: 8px;
+
+                padding: 8px;
+                margin: 0 5px;
+
+                .item {
+                    min-width: 100px;
+                    width: fit-content;
+                    height: fit-content;
+                    border: 2px solid var(--no-select);
+
+                    color: var(--on-background);
+
+                    padding: 4px;
+
+                }
+            }
+        }
+    }
+
+}

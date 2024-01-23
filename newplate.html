@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/MoonAstronautPixelArt.png">
+    <title>Plate Pilot - Add Plate</title>
+
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- style -->
+    <link rel="stylesheet/less" type="text/css" href="css/newplate.less"/>
+    <link rel="stylesheet/less" type="text/css" href="css/style.less"/>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <script src="js/index.js" defer></script>
+    <script src="js/newplate.js" defer></script>
+</head>
+<body>
+    <header>
+        <h4><a href="index.html">Plate Pilot</a></h4>
+        <div class="login">
+            <p>Sign In</p>
+            <p>Log In</p>
+        </div>
+    </header>
+    <div class="progress">
+        <progress id="progress-bar" max="100" value="100"></progress>
+    </div>
+    <section class="menu">
+        <a class="menu-item item-1" href="newplate.html"><i class='bx bx-bowl-hot'></i> + Plate</a>
+        <a class="menu-item item-2" href="savedplates.html">Saved Plates</a>
+        <a class="menu-item item-3" href="ToBuy.html">ToBuy</a>
+        <a class="menu-item item-4" href="fridge.html">Fridge</a>
+        <div class="overview">
+            <a class="menu-item item-5" href="today.html">Today</a>
+            <a class="menu-item item-6" href="week.html">Week</a>
+            <a class="menu-item item-7" href="month.html">Month</a>
+        </div>
+    </section>
+    <section class="create-plate">
+        <div class="head">
+            <div class="addname" id="PlateName"></div>
+            <div class="save-button">Save Plate</div>
+        </div>
+        <div class="create-plate-content">
+            <div class="ingredients">
+                <h5>Ingredients</h5>
+                <div class="add-ingredient-button">+</div>
+                <div class="single-ingredient">
+                    <div class="ingredient-name">Zucker</div>
+                    <div class="ingredient-amount"> 22gr </div>
+                </div>
+                <div class="single-ingredient">
+                    <div class="ingredient-name">Tomaten</div>
+                    <div class="ingredient-amount"> 22gr </div>
+                </div>
+                <div class="single-ingredient">
+                    <div class="ingredient-name">Gurken</div>
+                    <div class="ingredient-amount"> 22gr </div>
+                </div>
+                <div class="single-ingredient">
+                    <div class="ingredient-name">Honig</div>
+                    <div class="ingredient-amount"> 22gr </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

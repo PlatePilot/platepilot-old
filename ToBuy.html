@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/MoonAstronautPixelArt.png">
+    <title>Plate Pilot - ToBuy</title>
+
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- style -->
+    <link rel="stylesheet/less" type="text/css" href="css/ToBuy.less"/>
+    <link rel="stylesheet/less" type="text/css" href="css/style.less"/>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <script src="js/index.js" defer></script>
+    <script src="js/tobuy.js" defer></script>
+</head>
+<body>
+    <header>
+        <h4><a href="index.html">Plate Pilot</a></h4>
+        <div class="login">
+            <p>Sign In</p>
+            <p>Log In</p>
+        </div>
+    </header>
+    <div class="progress">
+        <progress id="progress-bar" max="100" value="100"></progress>
+    </div>
+    <section class="menu">
+        <a class="menu-item item-1" href="newplate.html"><i class='bx bx-bowl-hot'></i> + Plate</a>
+        <a class="menu-item item-2" href="savedplates.html">Saved Plates</a>
+        <a class="menu-item item-3" href="ToBuy.html">ToBuy</a>
+        <a class="menu-item item-4" href="fridge.html">Fridge</a>
+        <div class="overview">
+            <a class="menu-item item-5" href="today.html">Today</a>
+            <a class="menu-item item-6" href="week.html">Week</a>
+            <a class="menu-item item-7" href="month.html">Month</a>
+        </div>
+    </section>
+    <section class="list">
+        <h5 class="list-headline">Your ToBuy List(s)</h5>
+        <div class="list-content-wrapper">
+            <div class="list-content">
+                <h5 class="list-header">Basic List</h5>
+                <div class="add-content" id="add-content-button">
+                    <h5 class="add-item"><i class='bx bx-plus'></i></h5>
+                    <div class="text">Add item</div>
+                </div>
+                <div class="content-wrapper">
+                    <div class="content" id="content-id-1">
+                        <div class="checkbox-text-wrapper">
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox" class="checkbox">
+                            </div>
+                            <span>Honigsaft</span>
+                        </div>
+                        <div class="delete-button"><i class='bx bx-minus'></i></div>
+                    </div>
+                    <div class="content">
+                        <div class="checkbox-text-wrapper">
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox" class="checkbox">
+                            </div>
+                            <span>Rucola</span>
+                        </div>
+                        <div class="delete-button"><i class='bx bx-minus'></i></div>
+                    </div>
+                    <div class="content">
+                        <div class="checkbox-text-wrapper">
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox" class="checkbox">
+                            </div>
+                            <span>Nudeln</span>
+                        </div>
+                        <div class="delete-button"><i class='bx bx-minus'></i></div>
+                    </div>
+                    <div class="content">
+                        <div class="checkbox-text-wrapper">
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox" class="checkbox">
+                            </div>
+                            <span>Tomaten</span>
+                        </div>
+                        <div class="delete-button"><i class='bx bx-minus'></i></div>
+                    </div>
+                    <div class="content">
+                        <div class="checkbox-text-wrapper">
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox" class="checkbox">
+                            </div>
+                            <span>Salz</span>
+                        </div>
+                        <div class="delete-button"><i class='bx bx-minus'></i></div>
+                    </div>
+                </div>
+                <div class="complete-undo-wrapper">
+                    <div class="complete-button">Complete List</div>
+                    <div class="undo-button"><i class='bx bx-undo'></i>Undo</div>
+                </div>
+            </div>
+            <div class="add-list-button">+ Add List</div>
+        </div>
+    </section>
+</body>
+</html>
