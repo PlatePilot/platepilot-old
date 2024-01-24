@@ -97,15 +97,24 @@
                 margin: 0 5px;
 
                 .item {
-                    min-width: 100px;
                     width: fit-content;
                     height: fit-content;
                     border: 2px solid var(--no-select);
 
                     color: var(--on-background);
 
-                    padding: 4px;
+                    padding: 4px 10px;
 
+                    border-radius: 10px;
+
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    .bx-info-circle {
+                        color: var(--accent);
+                        cursor: pointer;
+                    }
                 }
             }
         }

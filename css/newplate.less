@@ -11,11 +11,9 @@
 
 
 .create-plate {
-    width: 98.5;
     height: 500px;
-
     margin: 2.5%;
-    padding: 1% 4% 1% 4%;
+    padding: 3% 4% 3% 4%;
 
     border-radius: 10px;
 
@@ -85,49 +83,85 @@
         display: flex;
         justify-content: start;
         flex-direction: row;
-        height: 100%;
+
+        gap: 15px;
 
         .ingredients {
-            height: 100%;
+            background-color: var(--secondary);
+            border-radius: 10px;
 
             display: flex;
             flex-direction: column;
-            gap: 1.5%;
+            align-items: start;
+            gap: 10px;
+
+            padding: 10px 10px 30px 10px;
 
             .add-ingredient-button {
-                background-color: var(--primary);
-                color: var(--on-primary);
-                border-radius: 50px;
-                padding: 2px;
-                width: 20px;
-                height: 20px;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                gap: 5px;
+
                 cursor: pointer;
+
+                .add-item {
+                    color: var(--accent);
+                    display: flex;
+                    align-items: end;
+                }
+
+                .text {
+                    color: var(--no-select);
+                }
             }
 
             .single-ingredient {
-                height: 30px;
-
                 display: flex;
                 flex-direction: row;
                 align-items: center;
 
                 gap: 10px;
 
+                border-radius: 10px;
+
                 .ingredient-name {
                     border: 2px solid var(--accent);
                     width: 200px;
-                    padding: 0 0 0 5px;
+                    padding: 3px 0 3px 10px;
+
+                    border-radius: 10px;
+
+                    display: flex;
+                    align-items: center;
                 }
 
                 .ingredient-amount {
                     border: 2px solid var(--accent);
                     width: 50px;
                     padding: 0 0 0 5px;
+
+                    border-radius: 10px;
+
+                    cursor: pointer;
                 }
             }
+        }
+
+        .add-list-button {
+            background-color: var(--secondary);
+            color: var(--no-select);
+
+            padding: 10px 16px;
+
+            width: 300px;
+            max-height: 50px;
+
+            display: flex;
+            align-items: center;
+
+            border-radius: 10px;
+
+            cursor: pointer;
         }
     }
 

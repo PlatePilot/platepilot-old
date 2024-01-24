@@ -45,6 +45,19 @@ body {
     background-color: var(--background);
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+background: var(--gray);
+}
+  
+
 .progress {
     height: 3px;
     display: flex;
@@ -145,9 +158,92 @@ header {
 
     .overview {
         display: flex;
-        flex-direction: row;
+
+        .menu-item {
+
+
+            @media (max-width: 590px) {
+                font-size: 10px;
+                padding: 2px 8px 2px 8px;
+            }
+        }
     }
 }
 
+footer {
+    display: flex;
+    justify-content: center;
 
+    .footer-wrapper {
+        padding: 48px 80px;
+        color: var(--on-background);
+        background-color: var(--surface);
 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: fit-content;
+
+        border-radius: 10px;
+
+        .footer-header {
+            font-weight: bold;
+        }
+
+        .footer-content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+
+            .footer-content {
+                width: 250px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 15px;
+
+                margin-bottom: 20px;
+
+                .footer-content-head {
+                    color: var(--no-select);
+                }
+
+                a {
+                    cursor: pointer;
+                    
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .footer-line {
+            width: 100%;
+            border-bottom: 1px solid var(--accent);
+        }
+
+        .footer-footer {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .user {
+
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+
+            .delete-localstorage {
+
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }   
+
+}

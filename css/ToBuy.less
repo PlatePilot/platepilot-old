@@ -18,7 +18,7 @@
     .list-headline {
         color: var(--no-select);
 
-        padding: 15px 0 5px 20px;
+        padding: 15px 0 5px 30px;
     }
 
     .list-content-wrapper {
@@ -29,10 +29,11 @@
 
         padding-left: 20px;
 
+        margin-bottom: 30px;
+
         .list-content {
             background-color: var(--surface);
             width: 300px;
-            min-height: 400px;
             height: fit-content;
 
             border-radius: 10px;
@@ -85,7 +86,15 @@
                         display: flex;
                         align-items: center;
                         gap: 9px;
-    
+
+                        input {
+                            appearance: auto;
+                            background-color: var(--surface);
+                            color: var(--on-surface);
+                            border-radius: 5px;
+                            border: 1px solid var(--primary);
+
+                        }
     
                         span {
                             color: var(--on-surface);
