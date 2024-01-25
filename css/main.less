@@ -1,6 +1,5 @@
 .dashboard-container {
     width: 100%;
-    margin: 3% 0;
     display: flex;
     justify-content: center;
 
@@ -10,8 +9,6 @@
         flex-direction: column;
         gap: 15px;
         width: fit-content;
-        background-color: var(--surface);
-        border-radius: 25px;
         flex-wrap: wrap;
 
         margin: 3%;
@@ -19,7 +16,7 @@
         h3 {
             display: flex;
             justify-content: center;
-            color: var(--on-surface);
+            color: var(--on-background);
         }
 
         .card-wrapper {
@@ -32,7 +29,7 @@
 
             .card {
                 border-radius: 25px;
-                background-color: var(--secondary);
+                background-color: var(--surface);
                 color: var(--on-secondary);
                 width: 28%;
                 min-width: 300px;
@@ -51,6 +48,7 @@
 
                     .ingredient {
                         border: 2px solid var(--accent);
+                        border-radius: 10px;
                         width: fit-content;
                         padding: 0 5px;
                     }
@@ -70,6 +68,82 @@
                         transition: all 0.3s ease;
                     }
                 }
+            }
+        }
+    }
+}
+
+.plans-pricing {
+    color: var(--on-background);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1em;
+
+    h5 {
+        font-weight: 100;
+    }
+
+    .plans-pricing-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 2em;
+
+        .plans-pricing-content {
+            width: 340px;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            flex-direction: column;
+            text-align: center;
+
+            gap: 1.5em;
+
+            .ppcitem {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .bx {
+                    color: var(--accent);
+                    font-size: 28px
+                }
+            }
+
+            @media (max-width: 395px) {
+                width: 85%;
+            }
+
+        }
+
+        .side {
+            background-color: var(--surface);
+            padding: 2em;
+
+            .mphead {
+                color: var(--no-select);
+                height: 2em;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+
+        .middle {
+            background-color: var(--secondary);
+            padding: 2em;
+
+            .mpstar {
+                color: var(--accent);
+                height: 2em;
+                display: flex;
+                align-items: center;
+                gap: 10px;
             }
         }
     }

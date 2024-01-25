@@ -155,24 +155,13 @@ header {
             width: min-content;
         }
     }
-
-    .overview {
-        display: flex;
-
-        .menu-item {
-
-
-            @media (max-width: 590px) {
-                font-size: 10px;
-                padding: 2px 8px 2px 8px;
-            }
-        }
-    }
 }
 
 footer {
     display: flex;
     justify-content: center;
+
+    margin-top: 50px;
 
     .footer-wrapper {
         padding: 48px 80px;
@@ -237,6 +226,7 @@ footer {
             }
 
             .delete-localstorage {
+                color: var(--error);
 
                 &:hover {
                     text-decoration: underline;

@@ -7,4 +7,28 @@
         color: var(--on-background);
         background-color: var(--secondary);
     }
+} 
+
+
+.savedplates-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    margin: 15px;
+
+    .savedplates {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 15px;
+
+        .savedplates-content {
+            width: 200px;
+            height: 200px;
+            background-color: var(--surface);
+            border-radius: 10px;
+        }
+
+    }
 }

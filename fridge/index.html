@@ -15,11 +15,11 @@
 
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/less" ></script>
-    <script src="js/index.js" defer></script>
+    <script src="../js/index.js" defer></script>
 </head>
 <body>
     <header>
-        <h4><a href="index.html">Plate Pilot</a></h4>
+        <h4><a href="../start">Plate Pilot</a></h4>
         <div class="login">
             <p>Sign In</p>
             <p>Log In</p>
@@ -29,24 +29,23 @@
         <progress id="progress-bar" max="100" value="100"></progress>
     </div>
     <section class="menu">
-        <a class="menu-item item-1" href="../newplate.html"><i class='bx bx-bowl-hot'></i> + Plate</a>
-        <a class="menu-item item-2" href="../savedplates.html">Saved Plates</a>
-        <a class="menu-item item-3" href="../ToBuy.html">ToBuy</a>
-        <a class="menu-item item-4" href="fridge.html">Fridge</a>
-        <div class="overview">
-            <a class="menu-item item-5" href="today.html">Today</a>
-            <a class="menu-item item-6" href="week.html">Week</a>
-            <a class="menu-item item-7" href="month.html">Month</a>
-        </div>
+        <a class="menu-item item-1" href="../newplate"><i class='bx bx-bowl-hot'></i> + Plate</a>
+        <a class="menu-item item-2" href="../savedplates">Saved Plates</a>
+        <a class="menu-item item-3" href="../tobuy/">ToBuy</a>
+        <a class="menu-item item-4" href="../fridge">Fridge</a>
+        <a class="menu-item item-5" href="../calendar/">Calendar</a>
     </section>
     <section class="fridge">
         <div class="navcolumn">
             <h5 class="header">Categories</h5>
             <a class="category all-items" href="#all-items-anchor">All Items</a>
-            <a class="category" href="#obst-anchor">Obst</a>
-            <a class="category" href="#gemüse-anchor">Gemüse</a>
-            <a class="category" href="#fleisch-anchor">Fleisch</a>
-            <a class="category" href="#fisch-anchor">Fisch</a>
+            <a class="category" href="#fruits-anchor">Fruits</a>
+            <a class="category" href="#vegetables-anchor">Vegetables</a>
+            <a class="category" href="">Grains</a>
+            <a class="category" href="#meat-anchor">Meat</a>
+            <a class="category" href="#fish-anchor">Fish</a>
+            <a class="category" href="">Dairy</a>
+            <a class="category" href="">Sweets</a>
         </div>
         <div class="content-wrapper">
             <div class="content">
@@ -54,7 +53,7 @@
                     <h5 class="header" id="all-items-anchor">All Items</h5>
                     <div class="add-item-button"><i class='bx bxs-plus-square'></i> Add Item</div>
                 </div>
-                <div class="items-wrapper">
+                <div class="all-items-list items-wrapper">
                     <div class="item">5 Äpfel<i class='bx bx-info-circle'></i></div>
                     <div class="item">2 Birnen</div>
                     <div class="item">10 Brokkoli</div>
@@ -66,28 +65,28 @@
                 </div>
             </div>
             <div class="content">
-                <h5 class="header" id="obst-anchor">Obst</h5>
+                <h5 class="header" id="fruits-anchor">Obst</h5>
                 <div class="items-wrapper">
                     <div class="item">5 Äpfel<i class='bx bx-info-circle'></i></div>
                     <div class="item">2 Birnen</div>
                 </div>
             </div>
             <div class="content">
-                <h5 class="header" id="gemüse-anchor">Gemüse</h5>
+                <h5 class="header" id="vegetables-anchor">Gemüse</h5>
                 <div class="items-wrapper">
                     <div class="item">10 Brokkoli</div>
                     <div class="item">5 Möhren</div>
                 </div>
             </div>
             <div class="content">
-                <h5 class="header" id="fleisch-anchor">Fleisch</h5>
+                <h5 class="header" id="meat-anchor">Fleisch</h5>
                 <div class="items-wrapper">
                     <div class="item">Kuhschenkel<i class='bx bx-info-circle'></i></div>
                     <div class="item">Schweinefilet<i class='bx bx-info-circle'></i></div>
                 </div>
             </div>
             <div class="content">
-                <h5 class="header" id="fisch-anchor">Fisch</h5>
+                <h5 class="header" id="fish-anchor">Fisch</h5>
                 <div class="items-wrapper">
                     <div class="item">2 Lachse<i class='bx bx-info-circle'></i></div>
                     <div class="item">5 Seeigel</div>
@@ -97,7 +96,7 @@
     </section>
     <footer>
         <div class="footer-wrapper">
-            <div class="footer-header">Plate Pilot</div>
+            <div class="footer-header">Plate Pilot</div> 
             <div class="footer-content-wrapper">
                 <div class="footer-content">
                     <span>Manage what you eat.</span>
@@ -113,11 +112,10 @@
                     <a href="https://github.com/PlatePilot" target="_blank">GitHub</a>
                 </div>
             </div>
-            <div class="footer-line">
-    
-            </div>
+            <div class="footer-line"></div>
             <div class="footer-footer">
-                <span>Made with ❤ by @jodek</span>
+                <span>Made with ❤ by <a href="https://github.com/jodekq" target="_blank" class="user">@jodek</a> (who got help from <a href="https://github.com/Mqxx" target="_blank" class="user">@mqx</a>)</span>
+                <div class="delete-localstorage" onclick="deleteLocalStorage()">Delete Local Storage</div>
             </div>
         </div>
     </footer>

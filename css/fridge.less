@@ -26,20 +26,29 @@
         background-color: var(--surface);
 
         margin: 10px;
+        padding-bottom: 10px;
 
         width: 170px;
         height: fit-content;
 
         border-radius: 10px;
 
+        gap: 10px;
+
         .category {
-            padding: 8px;
-            margin: 0 5px;
+            padding: 4px 8px;
+            margin: 0 12px;
 
             width: fit-content;
 
             color: var(--on-surface);
+            background-color: var(--secondary);
+
+            border-radius: 10px;
+
             cursor: pointer;
+
+            border: 1px solid var(--accent);
 
             &:hover {
                 text-decoration: underline;
@@ -47,7 +56,7 @@
         }
 
         .all-items {
-            margin: 8px 5px;
+            margin: 8px 12px;
         }
     }
 
@@ -87,14 +96,17 @@
                 }
             }
 
+            .all-items-list {
+                margin-bottom: 20px;
+            }
+
             .items-wrapper {
                 display: flex;
                 flex-wrap: wrap;
 
                 gap: 8px;
 
-                padding: 8px;
-                margin: 0 5px;
+                padding: 8px 13px;
 
                 .item {
                     width: fit-content;
