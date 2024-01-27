@@ -26,7 +26,7 @@
         flex-direction: column;
         background-color: var(--surface);
 
-        margin: 10px;
+        margin: 20px 10px 10px 10px;
         padding-bottom: 10px;
 
         width: 170px;
@@ -71,7 +71,7 @@
 
         background-color: var(--surface);
 
-        margin: 10px;
+        margin: 20px 10px 10px 10px;
 
         border-radius: 10px;
 
@@ -152,10 +152,15 @@
         border-radius: 10px;
         padding: 20px;
 
+        display: flex;
+        flex-direction: column;
+
+        gap: 3em;
 
         .add-item-modal-content-header {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: right;
+            gap: 30%;
 
             span {
                 display: flex;
@@ -166,7 +171,25 @@
 
             .bx {
                 color: var(--error);
-                font-size: 20px;
+                font-size: 22px;
+            }
+        }
+
+        .modal-content {
+            display: flex;
+            flex-direction: column;
+
+            gap: 2em;
+
+            span {
+                display: flex;
+                gap: 5Px;
+
+                .bx {
+                    color: var(--accent);
+                    display: flex;
+                    align-items: center;
+                }
             }
         }
     }
