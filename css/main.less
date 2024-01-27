@@ -11,7 +11,7 @@
         width: fit-content;
         flex-wrap: wrap;
 
-        margin: 3%;
+        margin: 3% 1% 1% 1%;
 
         h3 {
             display: flex;
@@ -144,6 +144,60 @@
                 display: flex;
                 align-items: center;
                 gap: 10px;
+            }
+        }
+    }
+}
+
+.quick-guide {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2em;
+
+    padding-bottom: 4em;
+
+    .quick-guide-header {
+        color: var(--on-background);
+
+        display: flex;
+        justify-content: center;
+
+        h3 {
+
+        }
+    }
+
+    .quick-guide-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 2em;
+
+        .quick-guide-content {
+            color: var(--on-background);
+            width: 80%;
+
+            h5 {
+                padding-bottom: 0.2em;
+            }
+
+            .guide-list {
+                padding-left: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: .3em;
+
+                .guide-list-content {
+                    display: flex;
+                    align-items: center;
+                    gap: 1em;
+
+                    .bx {
+                        font-size: 8px;
+                    }
+                }
             }
         }
     }

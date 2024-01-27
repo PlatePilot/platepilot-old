@@ -59,7 +59,7 @@ export function createNewEntry(toBuyList, name, checked) {
 
   let deleteButton = document.createElement("div");
   deleteButton.className = "delete-button";
-  deleteButton.innerHTML = "<i class='bx bx-minus'></i>";
+  deleteButton.innerHTML = "<i class='bx bx-x'></i>";
 
   deleteButton.addEventListener("click", function () {
     newContent.parentNode.removeChild(newContent);

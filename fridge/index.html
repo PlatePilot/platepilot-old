@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/MoonAstronautPixelArt.png">
+    <link rel="icon" type="image/x-icon" href="../assets/MoonAstronautPixelArt.png">
     <title>Plate Pilot - Fridge</title>
 
     <!-- icons -->
@@ -15,26 +15,19 @@
 
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/less" ></script>
-    <script src="../js/index.js" defer></script>
+    <script src="../js/fridge/index.js" defer></script>
+    <script src="../templates/template.js" type="module" defer></script> 
 </head>
 <body>
-    <header>
-        <h4><a href="index.html">Plate Pilot</a></h4>
-        <div class="login">
-            <p>Sign In</p>
-            <p>Log In</p>
+    <template src="../templates/header.html"></template>
+    <div id="add-item-modal" class="add-item-modal">
+        <div class="add-item-modal-content">
+            <div class="add-item-modal-content-header">
+                <h5>Add Item</h5>
+                <span id="close-modal-button"><i class='bx bx-x'></i></span>
+            </div>
         </div>
-    </header>
-    <div class="progress">
-        <progress id="progress-bar" max="100" value="100"></progress>
     </div>
-    <section class="menu">
-        <a class="menu-item item-1" href="../newplate"><i class='bx bx-bowl-hot'></i> + Plate</a>
-        <a class="menu-item item-2" href="../savedplates">Saved Plates</a>
-        <a class="menu-item item-3" href="../tobuy/">ToBuy</a>
-        <a class="menu-item item-4" href="../fridge">Fridge</a>
-        <a class="menu-item item-5" href="../calendar/">Calendar</a>
-    </section>
     <section class="fridge">
         <div class="navcolumn">
             <h5 class="header">Categories</h5>
@@ -51,7 +44,7 @@
             <div class="content">
                 <div class="head">
                     <h5 class="header" id="all-items-anchor">All Items</h5>
-                    <div class="add-item-button"><i class='bx bxs-plus-square'></i> Add Item</div>
+                    <div id="add-item-button" class="add-item-button"><i class='bx bxs-plus-square'></i> Add Item</div>
                 </div>
                 <div class="all-items-list items-wrapper">
                     <div class="item">5 Äpfel<i class='bx bx-info-circle'></i></div>
@@ -94,30 +87,11 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="footer-wrapper">
-            <div class="footer-header">Plate Pilot</div> 
-            <div class="footer-content-wrapper">
-                <div class="footer-content">
-                    <span>Manage what you eat.</span>
-                </div>
-                <div class="footer-content">
-                    <span class="footer-content-head">EXPLORE</span>
-                    <a>About</a>
-                    <a>Game</a>
-                </div>
-                <div class="footer-content">
-                    <span class="footer-content-head">LET'S CONNECT</span>
-                    <a >Contact me</a>
-                    <a href="https://github.com/PlatePilot" target="_blank">GitHub</a>
-                </div>
-            </div>
-            <div class="footer-line"></div>
-            <div class="footer-footer">
-                <span>Made with ❤ by <a href="https://github.com/jodekq" target="_blank" class="user">@jodek</a> (who got help from <a href="https://github.com/Mqxx" target="_blank" class="user">@mqx</a>)</span>
-                <div class="delete-localstorage" onclick="deleteLocalStorage()">Delete Local Storage</div>
-            </div>
+    <section class="food-database">
+        <div class="food-database-header"> 
+            <h3>Food Database</h3>
         </div>
-    </footer>
+    </section>
+    <template src="../templates/footer.html"></template>
 </body>
 </html>

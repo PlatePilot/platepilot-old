@@ -40,21 +40,28 @@ a:visited { text-decoration: none; color: var(--font-color);}
 a:hover { text-decoration: none; color: var(--font-color);}
 a:focus { text-decoration: none; color: var(--font-color);}
 a:hover, a:active { text-decoration: none; color: var(--font-color);}
+a { color: inherit; } 
 
 body {
     background-color: var(--background);
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 0px;
+
+    @media (max-width: 420px) {
+        display: none;
+    }
 }
 
 ::-webkit-scrollbar-track {
-background: var(--surface);
+    background: var(--surface);
+
 }
 
 ::-webkit-scrollbar-thumb {
-background: var(--gray);
+    background: var(--gray);
+
 }
   
 
@@ -145,6 +152,18 @@ header {
         padding: 8px 18px 8px 18px;
         border-radius: 50px;
 
+        display: flex;
+        align-items: center;
+        gap: 3px;
+
+        .bx-plus-medical {
+            font-size: 14px;
+        }
+
+        .bx-list-check {
+            font-size: 22px;
+        }
+
         &:hover {
             color: var(--on-background);
         }
@@ -153,6 +172,19 @@ header {
             padding: 4px 10px 4px 10px;
             font-size: 13px;
             width: min-content;
+        }
+
+        .menu-item-span {
+
+            @media (max-width: 420px) {
+                display: none;
+            }
+        }
+
+        .bx {
+            @media (max-width: 420px) {
+                font-size: 20px;
+            }
         }
     }
 }
@@ -174,7 +206,7 @@ footer {
         gap: 20px;
         width: fit-content;
 
-        border-radius: 10px;
+        border-radius: 10px 10px 0px 0px;
 
         .footer-header {
             font-weight: bold;
