@@ -1,12 +1,17 @@
 .docs {
-    height: 580px;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 20px; 
 
 
     .docs-nav {
         width: 25%;
+
+        margin-top: 10px;
+
+        @media (max-width: 750px) {
+            display: none;
+        }
 
         .docs-nav-head {
             color: var(--no-select);
@@ -34,7 +39,7 @@
     }
 
     .docs-content-wrapper {
-        overflow: scroll;
+        overflow: hidden;
         display: flex;
         flex-direction: column;
 
@@ -46,19 +51,73 @@
 
         text-align: left;
 
-        height: 650px;
+        padding-bottom: 80px;
+
+        @media (max-width: 1000px)  {
+            padding-right: 8%;
+        }
+
+        @media (max-width: 750px) {
+            width: 90%;
+        }
 
         .docs-content-about {
-            
-            
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
             p {
                 line-height: 2.25;
             }
         }
 
         .docs-content {
-            padding-top: 70px;
+            display: flex;
+            flex-direction: column;
+
+            padding-top: 50px;
             gap: 1rem;
+
+            p {
+                line-height: 2.25;
+            }
+
+            .docs-content-list {
+                padding-left: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: .6em;
+
+                .docs-content-list-content {
+                    display: flex;
+                    align-items: center;
+                    gap: 1em;
+
+                    .bx {
+                        font-size: 8px;
+                    }
+                } 
+            }
         }
+
+
+        .docs-nav-button {
+            z-index: 9999;
+            position: fixed;
+            right: 1.5rem;
+            bottom: 5rem;
+            display: none;
+            cursor: pointer;
+            color: var(--accent);
+
+            .bx {
+                font-size: 28px;
+            }
+
+            @media (max-width: 750px) {
+                display: block;
+            }
+        }
+
     }
 }

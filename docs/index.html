@@ -16,12 +16,12 @@
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/less" ></script>
     <script src="../js/docs.js" defer></script>
-    <script src="../templates/template.js" type="module" defer></script> 
+    <script src="../templates/template.js" type="module" defer></script>  
 </head>
 <body>
     <template src="../templates/header.html"></template>
     <section class="docs">
-        <div class="docs-nav">
+        <div id="docs-nav" class="docs-nav">
             <div class="docs-nav-head">
                 <h5>ABOUT TOOL</h5>
             </div>
@@ -37,47 +37,56 @@
                 <a class="docs-nav-item" href="javascript:void(0);" onclick="scrollToSection('calendar')">Why is there a calendar?</a>
             </div>
         </div>
-        <div class="docs-content-wrapper">
+        <div id="docs-content" class="docs-content-wrapper">
             <div class="docs-content-about">
                 <h2>About Plate Pilot</h2>
                 <p>In a world where spontaneous supermarket trips often lead to impulse purchases and a repetitive cycle of frozen pizza or noodles with pesto dinners, this tool trys to transform your clinary experience.</p>
+                <p>Why plan your meals? It's not just about saving money, it's a move towards minimizing food waste and breaking free from the monotony of repetitive meals. With this tool meal planning becomes a breeze.</p>
             </div>
             <div id="the-problem" class="docs-content">
                 <h3>The Problem</h3>
-                <p></p>
+                <p>Many individuals find themselves caught in the cycle of unplanned supermarket visits, leading to impulsive purchase and a lack of planning before the trip.</p>
+                <h5>Challenges:</h5>
+                <div class="docs-content-list">
+                    <div class="docs-content-list-content"><i class='bx bxs-circle'></i></i><span>Excessive Spending: Without a meal plan, there's a tendency to buy items on a whim, ultimately leading to higher grocery bills.</span></div>
+                    <div class="docs-content-list-content"><i class='bx bxs-circle'></i></i><span>Lack of Meal Variety: The absence of a structured plan often results in a repetitive and limited selection of meals, hindering culinary diversity and enjoyment.</span></div>
+                    <div class="docs-content-list-content"><i class='bx bxs-circle'></i><span>Poor Nutritional Choices: The absence of intentional meal planning may lead to an increased reliance on convenient, processed foods, potentially compromising nutritional quality.</span></div>
+                </div>
             </div>
             <div id="the-solution" class="docs-content">
                 <h3>The Solution</h3>
-                <p></p>
+                <p>Plate Pilot trys to provide an effiecient way to plan meals.</p>
             </div>
             <div id="how-works" class="docs-content">
                 <h3>How it works</h3>
-                <p></p>
+                <p>First of, you have to create a new meal or "plate". After that, you can either save the plate or shedule it to a certain date. </p>
             </div>
             <div id="what-is-plate" class="docs-content">
                 <h3>What is a "plate"?</h3>
-                <p></p>
+                <p>A "plate" is bascially just a meal. A meal you plan to prepare and eat. But when you read "plate" on this page, i mean not just a basic meal. The reason it's called plate is, that you can add drinks, accesories and a description. So its more like a recipe, than a meal.</p>
             </div>
             <div id="how-to-add" class="docs-content">
                 <h3>How to add new plates</h3>
-                <p></p>
+                <p>You have to click on "Add Plate", after that, you can create a name, add other categories (like drinks or accesories) and then add items in those categories. After that you can either save the plate or shedule it to a certain date.</p>
             </div>
             <div id="saved-plates" class="docs-content">
                 <h3>What are saved plates?</h3>
-                <p></p>
+                <p>Saved plates are the plates, you've saved. So whenever you want, you can choose one of your saved plates and shedule it to a date. You can always edit those saved plates.</p>
             </div>
             <div id="tobuy-list" class="docs-content">
                 <h3>Why are there ToBuy lists?</h3>
-                <p></p>
+                <p>ToBuy lists are for the times, when you need to remember, what you still have to buy. When you check one of the items in a ToBuy list, it doesn't get deleted. This is, so that you can see what you already have baught. If you want to delete an item, you can just click on the x and puff, its gone.</p>
             </div>
             <div id="fridge" class="docs-content">
                 <h3>How to use the Fridge</h3>
-                <p></p>
+                <p>The Fridge is the place, where you can add all the things (food), you have stored in your house. With that, you do not forget, what you still have (or don't have). You can add a name, the amount, an expiration date and a category you want to add the item to.</p>
+                <p>In the fridge, you also have access to a food databse, where you can look up any kind of food and its atributes like nutrients and vitmans.</p>
             </div>
             <div id="calendar" class="docs-content">
                 <h3>Why is there a calendar</h3>
-                <p></p>
+                <p>The calendar is there, so you can have an overview of when you have planned your plates.</p>
             </div>
+            <div class="docs-nav-button"><i class='bx bx-list-ul'></i></div>
         </div>
     </section>
     <template src="../templates/footer.html"></template>
