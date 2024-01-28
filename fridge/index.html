@@ -27,9 +27,23 @@
                 <span id="close-modal-button"><i class='bx bx-x'></i></span>
             </div>
             <div class="modal-content">
-                <div class="modal-content-content"><span>Name:</span><input class="input-text" type="text"></div>
-                <div class="modal-content-content"><span>Amount:</span><input class="input-number" type="number"></div>
-                <div class="modal-content-content"><i class='bx bx-info-circle'></i><span>Expiration Date:</span><input class="input-date" type="date"></div>
+                <div class="modal-content-content"><span>Name:</span><input id="fridge-modal-name" class="input-text" type="text"></div>
+                <div class="modal-content-content"><span>Amount:</span><input id="fridge-modal-amount" class="input-number" type="number"></div>
+                <div class="modal-content-content">
+                    <span>Category:</span>
+                    <select class="categories-list" name="Categories" id="fridge-modal-categories">
+                        <option value="none">None</option>
+                        <option value="fruits">Fruits</option>
+                        <option value="vegetables">Vegetables</option>
+                        <option value="grains">Grains</option>
+                        <option value="meat">Meat</option>
+                        <option value="fish">Fish</option>
+                        <option value="dairy">Dairy</option>
+                        <option value="sweets">Sweets</option>
+                    </select>
+                </div>
+                <div class="modal-content-content"><i class='bx bx-info-circle'></i><span>Expiration Date:</span><input id="fridge-modal-expiration" class="input-date" type="date"></div>
+                <div class="modal-content-content modal-add-item" id="modal-add-item">Save</div>
             </div>
         </div>
     </div>
@@ -42,8 +56,8 @@
             <a class="category" href="">Grains</a>
             <a class="category" href="#meat-anchor">Meat</a>
             <a class="category" href="#fish-anchor">Fish</a>
-            <a class="category" href="">Dairy</a>
-            <a class="category" href="">Sweets</a>
+            <a class="category" href="#dairy-anchor">Dairy</a>
+            <a class="category" href="#sweets-anchor">Sweets</a>
         </div>
         <div class="content-wrapper">
             <div class="content">
@@ -63,31 +77,43 @@
                 </div>
             </div>
             <div class="content">
-                <h5 class="header" id="fruits-anchor">Obst</h5>
-                <div class="items-wrapper">
+                <h5 class="header" id="fruits-anchor">Fruits</h5>
+                <div class="items-wrapper fruits">
                     <div class="item">5 Äpfel<i class='bx bx-info-circle'></i></div>
                     <div class="item">2 Birnen</div>
                 </div>
             </div>
             <div class="content">
-                <h5 class="header" id="vegetables-anchor">Gemüse</h5>
-                <div class="items-wrapper">
+                <h5 class="header" id="vegetables-anchor">Vegetables</h5>
+                <div class="items-wrapper vegetables">
                     <div class="item">10 Brokkoli</div>
                     <div class="item">5 Möhren</div>
                 </div>
             </div>
             <div class="content">
-                <h5 class="header" id="meat-anchor">Fleisch</h5>
-                <div class="items-wrapper">
+                <h5 class="header" id="meat-anchor">Meat</h5>
+                <div class="items-wrapper meat">
                     <div class="item">Kuhschenkel<i class='bx bx-info-circle'></i></div>
                     <div class="item">Schweinefilet<i class='bx bx-info-circle'></i></div>
                 </div>
             </div>
             <div class="content">
-                <h5 class="header" id="fish-anchor">Fisch</h5>
-                <div class="items-wrapper">
+                <h5 class="header" id="fish-anchor">Fish</h5>
+                <div class="items-wrapper fish">
                     <div class="item">2 Lachse<i class='bx bx-info-circle'></i></div>
                     <div class="item">5 Seeigel</div>
+                </div>
+            </div>
+            <div class="content">
+                <h5 class="header" id="dairy-anchor">Dairy</h5>
+                <div class="items-wrapper dairy">
+
+                </div>
+            </div>
+            <div class="content">
+                <h5 class="header" id="sweets-anchor">Sweets</h5>
+                <div class="items-wrapper sweets">
+
                 </div>
             </div>
         </div>

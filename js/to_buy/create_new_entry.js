@@ -3,8 +3,7 @@ import { createSpanFromInput } from "./create_span_from_input.js";
 export function createNewEntry(toBuyList, name, checked) {
   let newContent = document.createElement("div");
   newContent.className = "content";
-  newContent.id =
-    "content-id-" + crypto.randomUUID();
+  newContent.id = "content-id-" + crypto.randomUUID();
 
   let checkboxTextWrapper = document.createElement("div");
   checkboxTextWrapper.className = "checkbox-text-wrapper";
@@ -38,7 +37,7 @@ export function createNewEntry(toBuyList, name, checked) {
           checked: false
         });
         
-        localStorage.setItem('toBuyList', JSON.stringify(toBuyList));
+        localStorage.setItem('toBuyList', JSON.stringify(toBuyList)); 
       }
     });
   }

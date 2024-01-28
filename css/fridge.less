@@ -124,6 +124,11 @@
                     align-items: center;
                     gap: 8px;
 
+                    span {
+                        display: flex;
+                        align-items: center;
+                    }
+
                     .bx-info-circle {
                         color: var(--accent);
                         cursor: pointer;
@@ -148,7 +153,7 @@
         background-color: var(--secondary);
         color: var(--on-background);
         width: 400px;
-        height: 300px;
+        height: 380px;
         border-radius: 10px;
         padding: 20px;
 
@@ -183,32 +188,49 @@
 
             .modal-content-content {
                 display: flex;
-                gap: 5Px;
+                gap: 15px;
+
 
                 .input-text {
                     background-color: transparent;
                     color: var(--on-background);
-                    border: 1px solid var(--no-select);
-                    width: 150px;
+                    border-bottom: 1px solid var(--no-select);
+                    border-right: none;
+                    border-top: none;
+                    border-left: none;
+                    outline: none;
 
+                    width: 150px;
                     padding: 2px 15px;
                 }
 
                 .input-number {
                     background-color: transparent;
                     color: var(--on-background);
-                    border: 1px solid var(--no-select);
+                    border-bottom: 1px solid var(--no-select);
+                    border-right: none;
+                    border-top: none;
+                    border-left: none;
+                    outline: none;
+
                     width: 70px;
-                    
                     padding: 2px 15px;
+
+                    cursor: pointer;
                 }
 
                 .input-date {
                     background-color: transparent;
                     color: var(--on-background);
-                    border: 1px solid var(--no-select);
+                    border-bottom: 1px solid var(--no-select);
+                    border-right: none;
+                    border-top: none;
+                    border-left: none;
+                    outline: none;
 
                     padding: 2px 15px;
+
+                    cursor: pointer;
                 }
 
                 .bx {
@@ -216,6 +238,39 @@
                     display: flex;
                     align-items: center;
                 }
+
+                .categories-list {
+                    background-color: transparent;
+                    color: var(--on-background);
+                    border-bottom: 1px solid var(--no-select);
+                    border-right: none;
+                    border-top: none;
+                    border-left: none;
+                    outline: none;
+                    border-radius: 2px;
+
+                    cursor: pointer;
+
+                    option {
+                        background-color: var(--surface);
+
+                        &:focus {
+                            outline: none;
+                            border: 1px solid var(--no-select);
+                        }
+                    }
+                }
+            }
+
+            .modal-add-item {
+                justify-content: center;
+                padding: 8px;
+                background-color: var(--accent);
+                margin: 0 30%;
+                color: var(--on-primary);
+                font-weight: bold;
+                border-radius: 10px;
+                cursor: pointer;
             }
         }
     }
