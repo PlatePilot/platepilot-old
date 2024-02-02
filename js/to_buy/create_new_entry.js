@@ -20,7 +20,7 @@ export function createNewEntry(toBuyList, name, checked) {
   let inputField = document.createElement("input");
   inputField.type = "text";
   
-  checkboxTextWrapper.appendChild(checkboxWrapper);
+  checkboxTextWrapper.appendChild(checkboxWrapper); 
   checkboxTextWrapper.appendChild(inputField);
   
   if (name) {

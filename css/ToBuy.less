@@ -5,7 +5,7 @@
 
     .item-3 {
         color: var(--on-background);
-        background-color: var(--secondary);
+        border: 2px solid var(--secondary);
     }
 }
 
@@ -59,7 +59,7 @@
                 padding: 10px 15px 0px;
 
                 .add-item {
-                    color: var(--accent);
+                    color: var(--secondary);
                     display: flex;
                     align-items: end;
                 }
@@ -103,7 +103,7 @@
                         .checkbox-wrapper {
                             display: flex;
                             align-items: center;
-                            justify-content: center;
+                            justify-content: center; 
     
                             .checkbox {
                                 appearance: none;
@@ -157,15 +157,18 @@
         
                     cursor: pointer;
 
-                    background-color: var(--accent);
-                    color: var(--on-primary);
-    
+                    border: 2px solid var(--secondary);
+
+                    color: var(--on-background);
+                    font-weight: bold;
                     font-size: 12px;
                 }
 
                 .undo-button {
-                    background-color: var(--primary);
-                    color: var(--on-primary);
+                    border: 2px solid var(--accent);
+                    color: var(--on-background);
+                    font-weight: bold;
+                    font-size: 12px;
 
                     display: flex;
                     align-items: center;
@@ -178,8 +181,6 @@
                     margin: 15px;
 
                     cursor: pointer;
-
-                    font-size: 12px;
                 }
 
             }

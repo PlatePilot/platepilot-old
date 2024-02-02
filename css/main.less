@@ -43,21 +43,21 @@
                     gap: 10px;
 
                     .plannedDate {
-
+                        border-bottom: 1px solid var(--secondary);
+                        width: fit-content;
                     }
 
                     .ingredient {
-                        border: 2px solid var(--accent);
-                        border-radius: 10px;
-                        width: fit-content;
-                        padding: 0 5px;
+                        text-decoration: underline;
                     }
 
                     .button {
                         border: none;
-                        font-size: 16px;
-                        background-color: var(--primary);
+                        background-color: var(--secondary);
+
                         color: var(--on-primary);
+                        font-size: 16px;
+                        font-weight: bold;
 
                         padding: 6px 12px;
                         border-radius: 6px;
@@ -110,7 +110,7 @@
                 gap: 10px;
 
                 .bx {
-                    color: var(--accent);
+                    color: var(--secondary);
                     font-size: 28px
                 }
             }
@@ -135,11 +135,13 @@
         }
 
         .middle {
-            background-color: var(--secondary);
+            // background-color: var(--primary);
+            background: linear-gradient(to top left, var(--dark-secondary), var(--background));
+            border: 2px solid var(--accent);
             padding: 2em;
 
             .mpstar {
-                color: var(--accent);
+                color: var(--secondary);
                 height: 2em;
                 display: flex;
                 align-items: center;

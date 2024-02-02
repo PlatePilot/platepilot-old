@@ -1,4 +1,4 @@
-import { createNewEntry } from "./create_new_entry.js";
+import { createNewEntry } from "./create_new_entry.js"; 
 
 const addContentButton = document.getElementById("add-content-button");
 

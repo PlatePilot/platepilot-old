@@ -5,7 +5,7 @@
 
     .item-4 {
         color: var(--on-background);
-        background-color: var(--secondary);
+        border: 2px solid var(--secondary);
     }
 }
 
@@ -43,13 +43,9 @@
             width: fit-content;
 
             color: var(--on-surface);
-            background-color: var(--secondary);
-
-            border-radius: 10px;
+            font-weight: bold;
 
             cursor: pointer;
-
-            border: 1px solid var(--accent);
 
             &:hover {
                 text-decoration: underline;
@@ -82,8 +78,11 @@
                 justify-content: space-between;
 
                 .add-item-button {
-                    background-color: var(--secondary);
-                    color: var(--accent);
+                    color: var(--secondary);
+                    font-weight: bold;
+
+                    border: 2px solid var(--secondary);
+
                     margin: 7px;
                     padding: 6px;
 
@@ -93,7 +92,6 @@
                     cursor: pointer;
 
                     border-radius: 10px;
-
                 }
             }
 
@@ -129,9 +127,23 @@
                         align-items: center;
                     }
 
-                    .bx-info-circle {
-                        color: var(--accent);
-                        cursor: pointer;
+                    .info-span {
+                        display: flex;
+                        gap: 5px;
+                        
+                        .bx {
+                            color: var(--secondary);
+                            cursor: pointer;
+                        }
+
+                        .info-span-content {
+                            display: none;
+    
+                            &:hover {
+                                display: block;
+                            }
+            
+                        }
                     }
                 }
             }
@@ -150,8 +162,11 @@
     justify-content: center;
 
     .add-item-modal-content {
-        background-color: var(--secondary);
+        background-color: var(--primary);
         color: var(--on-background);
+
+        border: 2px solid var(--dark-secondary);
+
         width: 400px;
         height: 380px;
         border-radius: 10px;
@@ -234,7 +249,7 @@
                 }
 
                 .bx {
-                    color: var(--accent);
+                    color: var(--secondary);
                     display: flex;
                     align-items: center;
                 }
@@ -260,17 +275,6 @@
                         }
                     }
                 }
-            }
-
-            .modal-add-item {
-                justify-content: center;
-                padding: 8px;
-                background-color: var(--accent);
-                margin: 0 30%;
-                color: var(--on-primary);
-                font-weight: bold;
-                border-radius: 10px;
-                cursor: pointer;
             }
         }
     }

@@ -5,7 +5,7 @@
 
     .item-1 {
         color: var(--on-background);
-        background-color: var(--secondary);
+        border: 2px solid var(--secondary);
     }
 }
 
@@ -15,10 +15,6 @@
     margin: 2.5%;
     padding: 3% 4% 3% 4%;
 
-    border-radius: 10px;
-
-    background-color: var(--surface);
-
     color: var(--on-background);
 
     display: flex;
@@ -27,7 +23,7 @@
     gap: 5%;
 
     .head {
-        height: 50px;
+        height: 50px; 
 
         display: flex;
         justify-content: space-between;
@@ -63,20 +59,6 @@
             align-items: center;
             justify-content: center;
         }
-
-        .save-button {
-            display: flex;
-            align-items: center;
-
-            border-radius: 50px;
-
-            padding: 8px;
-
-            cursor: pointer;
-
-            background-color: var(--primary);
-            color: var(--on-primary);
-        }
     }
 
     .create-plate-content {
@@ -87,7 +69,7 @@
         gap: 15px;
 
         .ingredients {
-            background-color: var(--secondary);
+            background-color: var(--primary);
             border-radius: 10px;
 
             display: flex;
@@ -102,10 +84,12 @@
                 align-items: center;
                 gap: 5px;
 
+                margin-bottom: 10px;
+
                 cursor: pointer;
 
                 .add-item {
-                    color: var(--accent);
+                    color: var(--secondary);
                     display: flex;
                     align-items: end;
                 }
@@ -122,12 +106,9 @@
 
                 gap: 10px;
 
-                border-radius: 10px;
-
                 .ingredient-name {
-                    border: 2px solid var(--accent);
                     width: 200px;
-                    padding: 3px 0 3px 10px;
+                    padding: 3px 5px;
 
                     border-radius: 10px;
 
@@ -136,11 +117,8 @@
                 }
 
                 .ingredient-amount {
-                    border: 2px solid var(--accent);
                     width: 50px;
                     padding: 0 0 0 5px;
-
-                    border-radius: 10px;
 
                     cursor: pointer;
                 }
@@ -148,7 +126,7 @@
         }
 
         .add-list-button {
-            background-color: var(--secondary);
+            background-color: var(--primary);
             color: var(--no-select);
 
             padding: 10px 16px;
